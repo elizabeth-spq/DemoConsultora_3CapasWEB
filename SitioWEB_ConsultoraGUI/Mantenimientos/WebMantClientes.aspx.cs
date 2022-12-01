@@ -324,42 +324,9 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                         est = false;
                     }
 
-
                     chkTipo2.Checked = tipCl;
                     chkEstado2.Checked = est;
-                    /*
-                    //tipo de documento
-                    Boolean tip1, tip2, tip3;
-                    if (objClienteBE.Tip_Doc_Cli.ToString() == "1")
-                    {
-                        tip1 = true;
-                    }
-                    else
-                    {
-                        tip1 = false;
-                    }
-                    if (objClienteBE.Tip_Doc_Cli.ToString() == "2")
-                    {
-                        tip2 = true;
-                    }
-                    else
-                    {
-                        tip2 = false;
-                    }
-                    if (objClienteBE.Tip_Doc_Cli.ToString() == "3")
-                    {
-                        tip3 = true;
-                    }
-                    else
-                    {
-                        tip3 = false;
-                    }
-
-                    rdbRuc.Checked = tip1;
-                    rdbDni.Checked = tip2;
-                    rdbCarne.Checked = tip3;
-                    */
-
+                  
                     rdbRadioList2.SelectedValue = objClienteBE.Tip_Doc_Cli;
 
                     PopMan02.Show();

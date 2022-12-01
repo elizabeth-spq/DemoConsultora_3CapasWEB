@@ -253,14 +253,14 @@
                         <td align="right" class="auto-style13">Nombre:
                         </td>
                         <td align="left" class="auto-style12">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="350px" CssClass="TextBox" />
+                            <asp:TextBox ID="txtNombre2" runat="server" Width="350px" CssClass="TextBox" />
                         </td>
                     </tr>
                    
                     <tr>
                         <td align="right" class="auto-style13">Área:</td>
                         <td align="left" class="auto-style12">
-                            <asp:DropDownList ID="DropDownList1" runat="server" Width="300px" AutoPostBack="True" OnSelectedIndexChanged="cboArea1_SelectedIndexChanged">
+                            <asp:DropDownList ID="cboArea2" runat="server" Width="300px" AutoPostBack="True" OnSelectedIndexChanged="cboArea2_SelectedIndexChanged">
                             </asp:DropDownList>
                         </td>
                     </tr>
@@ -268,7 +268,7 @@
                     <tr>
                         <td align="right" class="auto-style13">Tipo Proyecto:</td>
                         <td align="left" class="auto-style12">
-                            <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="labelRadioButton">
+                            <asp:RadioButtonList ID="rdbListTip2" runat="server" CssClass="labelRadioButton">
                                 <asp:ListItem Value="1">Facturable recurrente</asp:ListItem>
                                 <asp:ListItem Value="2">Facturable no recurrente</asp:ListItem>
                                 <asp:ListItem Value="3">Por horas trabajadas</asp:ListItem>
@@ -284,7 +284,7 @@
                     <tr>
                         <td align="right" class="auto-style13">Estado:</td>
                         <td align="left" class="auto-style12">
-                            <asp:RadioButtonList ID="RadioButtonList2" runat="server" CssClass="labelRadioButton">
+                            <asp:RadioButtonList ID="rdbListEstado2" runat="server" CssClass="labelRadioButton">
                                 <asp:ListItem Value="0">Programado</asp:ListItem>
                                 <asp:ListItem Value="1">En ejecucion</asp:ListItem>
                                 <asp:ListItem Value="2">Detenido</asp:ListItem>
@@ -297,7 +297,7 @@
                     <tr>
                         <td align="right" class="auto-style13">Presupuesto:</td>
                         <td align="left" class="auto-style12">
-                            <asp:TextBox ID="TextBox2" runat="server" CssClass="TextBox" Width="150px" />
+                            <asp:TextBox ID="txtPresu2" runat="server" CssClass="TextBox" Width="150px" />
                         </td>
                     </tr>
                     <tr>
