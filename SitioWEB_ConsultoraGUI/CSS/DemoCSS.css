@@ -20,7 +20,11 @@ color: #FF0000;}
 }
 
 .labelContenido{font-family: Verdana; font-size: 10pt; color: #993366;}
-
+.labelRadioButton {
+	font-family: Verdana;
+	font-size: 10pt;
+	color: black;
+}
 .GriedView{font-family: Verdana; font-size: 8pt;}
 
 .Imagen {box-shadow: 9px 9px 6px #888; 
@@ -123,6 +127,19 @@ div.ajax__calendar_container{width: 170px;font-size :10px; }
 	 background-color:#006699;
 	  box-shadow: 3px 3px 1px #888888;
 	  color:white;
+}
+
+.boton3 {
+	border-color: inherit;
+	border-width: medium;
+	font-family: Verdana;
+	border-style: none;
+	padding: 2px 5px;
+	/* font-weight:bold;*/
+	background-color: #336666;
+	box-shadow: 3px 3px 1px #888888;
+	color: white;
+	
 }
 
 .TextBox {

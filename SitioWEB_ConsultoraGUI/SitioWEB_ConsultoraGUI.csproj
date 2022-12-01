@@ -133,6 +133,7 @@
     <Content Include="Mantenimientos\Mantenimientos.aspx" />
     <Content Include="Mantenimientos\MantPlantilla.aspx" />
     <Content Include="Mantenimientos\WebMantClientes.aspx" />
+    <Content Include="Mantenimientos\WebMantProyectos.aspx" />
     <Content Include="Transacciones\Transacciones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -171,6 +172,13 @@
     </Compile>
     <Compile Include="Mantenimientos\WebMantClientes.aspx.designer.cs">
       <DependentUpon>WebMantClientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProyectos.aspx.cs">
+      <DependentUpon>WebMantProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\WebMantProyectos.aspx.designer.cs">
+      <DependentUpon>WebMantProyectos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transacciones\Transacciones.aspx.cs">

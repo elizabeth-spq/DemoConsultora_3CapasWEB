@@ -42,12 +42,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaADO.cs" />
+    <Compile Include="CategoriaADO.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteADO.cs" />
+    <Compile Include="ColaboradorADO .cs" />
     <Compile Include="ConexionADO.cs" />
     <Compile Include="GrupoEconomicoADO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoADO.cs" />
     <Compile Include="UbigeoADO.cs" />
+    <Compile Include="UsuarioADO.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyConsultora_BE\ProyConsultora_BE.csproj">

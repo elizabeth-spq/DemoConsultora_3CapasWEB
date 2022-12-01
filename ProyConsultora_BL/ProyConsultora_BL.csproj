@@ -41,11 +41,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AreaBL.cs" />
+    <Compile Include="CategoriaBL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteBL.cs" />
+    <Compile Include="ColaboradorBL.cs" />
     <Compile Include="GrupoEconomicoBL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProyectoBL.cs" />
     <Compile Include="UbigeoBL.cs" />
+    <Compile Include="UsuarioBL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyConsultora_ADO\ProyConsultora_ADO.csproj">
