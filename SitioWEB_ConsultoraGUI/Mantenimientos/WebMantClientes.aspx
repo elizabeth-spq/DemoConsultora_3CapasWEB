@@ -36,15 +36,18 @@
             color: #993366;
             height: 25px;
         }
+
         .auto-style9 {
             height: 25px;
         }
+
         .auto-style10 {
             font-family: Verdana;
             font-size: 10pt;
             color: #993366;
             height: 26px;
         }
+
         .auto-style11 {
             height: 26px;
         }
@@ -60,27 +63,22 @@
                 <p class="tituloForm">MANTENIMIENTO DE CLIENTES</p>
             </div>
 
+            <%--Boton ( o link button ) para mostrar el modal de insercion PopMant del nuevo registro--%>
             <br />
 
             <%--El grid view para el listado de registros, recuerde implementar la primera columna de tipo Button, con el CommanName (recomendado) Editar
                    y con un icono asociado a la accion de editar y formatear las columnas que desea mostrar--%>
-            <table class="auto-style3" "> 
-                <caption>
-                    <tr>
-                        <td class="auto-style6" Width="255px"> 
-                </caption>
+            <br />
+            <table class="auto-style3">
                 <tr>
-                    <td class="auto-style6">Ingrese nombre:</td>
-                    </td>
-                    <td class="auto-style7">
+                    <td class="labelContenido">Ingrese nombre del cliente:</td>
+                    <td>
                         <asp:TextBox ID="txtFiltro" runat="server" CssClass="TextBox" Width="255px"></asp:TextBox>
                         &nbsp;
                         <asp:ImageButton ID="btnFiltrar" runat="server" ImageUrl="~/Images/Buscar.png" OnClick="btnFiltrar_Click" Style="width: 16px" />
                     </td>
                     <td>
-                        <div style="text-align:center; ">
-                            <asp:Button ID="btnNuevo" runat="server" CssClass="boton3" OnClick="btnNuevo_Click" Text="Nuevo cliente" />
-                        </div>
+                        <asp:Button ID="btnNuevo" runat="server" CssClass="boton3" OnClick="btnNuevo_Click" Text="Nuevo cliente" />
                     </td>
                 </tr>
             </table>
@@ -160,7 +158,7 @@
                         <td align="right" class="auto-style4">Número de Doc:
                         </td>
                         <td align="left" class="auto-style5">
-                            <asp:TextBox ID="txtNumDoc1" runat="server" Width="200px" CssClass="TextBox" />
+                            <asp:TextBox ID="txtNumDoc1" runat="server" Width="200px" CssClass="TextBox" TextMode="Number" />
                         </td>
                     </tr>
                     <tr>
@@ -181,7 +179,7 @@
                         <td align="right" class="auto-style4">Telefono:
                         </td>
                         <td align="left" class="auto-style5">
-                            <asp:TextBox ID="txtTel1" runat="server" Width="200px" CssClass="TextBox" />
+                            <asp:TextBox ID="txtTel1" runat="server" Width="200px" CssClass="TextBox" TextMode="Phone" />
                         </td>
                     </tr>
 
@@ -252,7 +250,7 @@
             <asp:Panel ID="PanelMan2" runat="server" CssClass="CajaDialogo" align="center" Style="display: table" Width="700">
                 <table style="border: Solid 3px #336666; height: 308px;"
                     cellpadding="0" cellspacing="0">
-                    <tr style="background-color:#336666">
+                    <tr style="background-color: #336666">
                         <td colspan="2" style="height: 10%; color: White; font-weight: bold; font-size: larger"
                             align="center">Actualizar cliente
                         </td>
@@ -269,7 +267,7 @@
                             <asp:Label ID="lblCod" runat="server" CssClass="labelTitulo"></asp:Label>
                         </td>
                     </tr>
-                     <tr>
+                    <tr>
                         <td align="right" class="labelContenido">Nombre:
                         </td>
                         <td align="left">
@@ -300,7 +298,7 @@
                         <td align="right" class="auto-style4">Número de Doc:
                         </td>
                         <td align="left" class="auto-style5">
-                            <asp:TextBox ID="txtNumDoc2" runat="server" Width="200px" CssClass="TextBox" />
+                            <asp:TextBox ID="txtNumDoc2" runat="server" Width="200px" CssClass="TextBox" TextMode="Number" />
                         </td>
                     </tr>
                     <tr>
@@ -321,7 +319,7 @@
                         <td align="right" class="auto-style4">Telefono:
                         </td>
                         <td align="left" class="auto-style5">
-                            <asp:TextBox ID="txtTel2" runat="server" Width="200px" CssClass="TextBox" />
+                            <asp:TextBox ID="txtTel2" runat="server" Width="200px" CssClass="TextBox" TextMode="Phone" />
                         </td>
                     </tr>
 

@@ -195,7 +195,7 @@
                     <tr>
                         <td align="right" class="auto-style20">Presupuesto:</td>
                         <td align="left" class="auto-style19">
-                            <asp:TextBox ID="txtPresu1" runat="server" CssClass="TextBox" Width="150px" />
+                            <asp:TextBox ID="txtPresu1" runat="server" CssClass="TextBox" Width="150px" TextMode="Number" />
                         </td>
                     </tr>
                 
@@ -297,7 +297,7 @@
                     <tr>
                         <td align="right" class="auto-style13">Presupuesto:</td>
                         <td align="left" class="auto-style12">
-                            <asp:TextBox ID="txtPresu2" runat="server" CssClass="TextBox" Width="150px" />
+                            <asp:TextBox ID="txtPresu2" runat="server" CssClass="TextBox" Width="150px" TextMode="Number" />
                         </td>
                     </tr>
                     <tr>

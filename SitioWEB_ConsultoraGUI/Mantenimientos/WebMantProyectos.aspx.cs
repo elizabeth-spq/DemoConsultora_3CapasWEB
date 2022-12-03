@@ -26,8 +26,8 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
             try
             {
                 if (Page.IsPostBack == false)
-                {                                      
-                    CargarDatos("");                
+                {
+                    CargarDatos("");
                 }
             }
             catch (Exception ex)
@@ -35,7 +35,7 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                 lblMensajePopup.Text = "Error : " + ex.Message;
                 PopMensaje.Show();
             }
-            
+
         }
         private void CargarDatos(String strFiltro)
         {
@@ -68,7 +68,6 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                 PopMensaje.Show();
             }
         }
-     
 
         protected void grvProyectos_PageIndexChanging(object sender, GridViewPageEventArgs e)
         {
@@ -85,8 +84,8 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                 txtNombre1.Text = String.Empty;
                 CargarArea(1, "");
                 rdbListTip1.SelectedValue = "3";
-                rdbListEstado1.SelectedValue= "0";
-                txtPresu1.Text= String.Empty;
+                rdbListEstado1.SelectedValue = "0";
+                txtPresu1.Text = String.Empty;
                 txtNombre1.Focus();
                 PopMan01.Show();
 
@@ -129,7 +128,6 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
 
         protected void btnGrabar1_Click(object sender, EventArgs e)
         {
-           
             try
             {
                 // Validamos...
@@ -146,7 +144,7 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                 {
                     throw new Exception("El presupuesto es obligatorio");
                 }
-               
+
                 //Si todo está ok...
                 objProyectoBE.Cod_Area = cboArea1.SelectedValue.ToString();
                 objProyectoBE.Nom_Proy = txtNombre1.Text.Trim();
@@ -173,7 +171,7 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
             }
         }
 
-       protected void grvProyectos_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void grvProyectos_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             try
             {
@@ -196,7 +194,7 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
                     rdbListTip2.Text = objProyectoBE.Tip_Proy;
                     rdbListEstado2.Text = Convert.ToString(objProyectoBE.Estado);
                     txtPresu2.Text = Convert.ToString(objProyectoBE.Imp_Imp_Estm);
-                    
+
                     String Cod_Gru_Eco = objProyectoBE.Cod_Area;
                     CargarArea(2, Cod_Gru_Eco);
                     PopMan02.Show();
