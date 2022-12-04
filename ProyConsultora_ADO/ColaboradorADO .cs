@@ -242,6 +242,71 @@ namespace ProyConsultora_ADO
 
         }
 
+        public DataTable ListarColaborador_Paginacion
+            (String strCod_Area,String strCod_Cat,String strEstado,Int16 intNumPag)
+        {
+
+            try
+            {
+                DataSet dts = new DataSet();
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarColaboradores_Paginacion";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@Cod_Area", strCod_Area);
+                cmd.Parameters.AddWithValue("@Cod_Cat", strCod_Cat);
+                cmd.Parameters.AddWithValue("@Estado", strEstado);
+                cmd.Parameters.AddWithValue("@NumPag", intNumPag);
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(dts, "ColaboradoresPaginacion");
+                return dts.Tables["ColaboradoresPaginacion"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
+
+        public Int16 NumPag_ListarColaborador_Paginacion
+            ( String strCod_Area, String strCod_Cat, String strEstado)
+        {
+            //Metodo que retorna la cantidad de registros devueltos de acuerdo a los parametros 
+
+            try
+            {
+                
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_NumPag_ListarColaboradores_Paginacion";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@Cod_Area", strCod_Area);
+                cmd.Parameters.AddWithValue("@Cod_Cat", strCod_Cat);
+                cmd.Parameters.AddWithValue("@Estado", strEstado);
+               //parametro de salida que devolvera la cantidad de registros de la consulta
+                cmd.Parameters.Add("@NumReg",SqlDbType.Int);
+                cmd.Parameters["@NumReg"].Direction = ParameterDirection.Output;
+                cnx.Open();
+                cmd.ExecuteScalar();
+                Int16 NumReg = Convert.ToInt16(cmd.Parameters["@NumReg"].Value);
+                return NumReg;
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            finally
+            {
+                if(cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+
+        }
+
 
     }
 }

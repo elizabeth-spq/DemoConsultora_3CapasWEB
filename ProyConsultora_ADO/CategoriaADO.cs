@@ -18,14 +18,13 @@ namespace ProyConsultora_ADO
 
         public DataTable ListarCategoria()
         {
-            DataSet dts = new DataSet();
-            cnx.ConnectionString = MiConexion.GetCnx();
-            cmd.Connection = cnx;
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.CommandText = "usp_ListarCategoria";
             try
             {
-
+                DataSet dts = new DataSet();
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarCategoria";
                 cmd.Parameters.Clear();
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
                 ada.Fill(dts, "Categorias");

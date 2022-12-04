@@ -71,6 +71,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Consultas\Consultas.aspx" />
+    <Content Include="Consultas\WebColaboradoresPaginada.aspx" />
+    <Content Include="Consultas\WebAsignacionProyecto.aspx" />
     <Content Include="CSS\DemoCSS.css" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
@@ -144,6 +146,20 @@
     </Compile>
     <Compile Include="Consultas\Consultas.aspx.designer.cs">
       <DependentUpon>Consultas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\WebColaboradoresPaginada.aspx.cs">
+      <DependentUpon>WebColaboradoresPaginada.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\WebColaboradoresPaginada.aspx.designer.cs">
+      <DependentUpon>WebColaboradoresPaginada.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\WebAsignacionProyecto.aspx.cs">
+      <DependentUpon>WebAsignacionProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\WebAsignacionProyecto.aspx.designer.cs">
+      <DependentUpon>WebAsignacionProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="DemoMaster.Master.cs">
       <DependentUpon>DemoMaster.Master</DependentUpon>

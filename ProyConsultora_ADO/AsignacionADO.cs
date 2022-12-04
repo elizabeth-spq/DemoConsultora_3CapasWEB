@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProyConsultora_ADO
 {
-    public class AreaADO
+    internal class AsignacionADO
     {
         // Instancias.....
         ConexionADO MiConexion = new ConexionADO();
@@ -16,20 +16,21 @@ namespace ProyConsultora_ADO
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
 
-        public DataTable ListarArea()
+        public DataTable ListarGE()
         {
             try
             {
+
                 DataSet dts = new DataSet();
                 cnx.ConnectionString = MiConexion.GetCnx();
                 cmd.Connection = cnx;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "usp_ListarArea";
+                cmd.CommandText = "usp_ListarAsignacionesProyectoFechas";
 
                 cmd.Parameters.Clear();
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
-                ada.Fill(dts, "Areas");
-                return dts.Tables["Areas"];
+                ada.Fill(dts, "AsigProFec");
+                return dts.Tables["AsigProFec"];
             }
             catch (SqlException ex)
             {

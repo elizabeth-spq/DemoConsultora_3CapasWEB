@@ -11,17 +11,17 @@ using ProyConsultora_BE;
 
 namespace ProyConsultora_BL
 {
-    public  class ColaboradorBL
+    public class ColaboradorBL
     {
         ColaboradorADO objColaboradorADO = new ColaboradorADO();
 
         public DataTable ListarColaborador()
-        { 
-           return objColaboradorADO.ListarColaborador ();
+        {
+            return objColaboradorADO.ListarColaborador();
         }
         public ColaboradorBE ConsultarColaborador(String strCodigo)
         {
-            return objColaboradorADO.ConsultarColaborador (strCodigo );
+            return objColaboradorADO.ConsultarColaborador(strCodigo);
         }
 
         public Boolean InsertarColaborador(ColaboradorBE objColaboradorBE)
@@ -35,6 +35,16 @@ namespace ProyConsultora_BL
         public Boolean EliminarColaborador(String strCodigo, string usuario)
         {
             return objColaboradorADO.EliminarColaborador(strCodigo);
+        }
+        public DataTable ListarColaborador_Paginacion
+            (String strCod_Area, String strCod_Cat, String strEstado, Int16 intNumPag)
+        {
+            return objColaboradorADO.ListarColaborador_Paginacion(strCod_Area, strCod_Cat, strEstado, intNumPag);
+        }
+        public Int16 NumPag_ListarColaborador_Paginacion
+            (String strCod_Area, String strCod_Cat, String strEstado)
+        {
+            return objColaboradorADO.NumPag_ListarColaborador_Paginacion(strCod_Area, strCod_Cat, strEstado);
         }
     }
 }

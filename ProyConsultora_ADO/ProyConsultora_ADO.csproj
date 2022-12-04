@@ -45,6 +45,7 @@
     <Compile Include="AreaADO.cs" />
     <Compile Include="CategoriaADO.cs" />
     <Compile Include="Class1.cs" />
+    <Compile Include="AsignacionADO.cs" />
     <Compile Include="ClienteADO.cs" />
     <Compile Include="ColaboradorADO .cs" />
     <Compile Include="ConexionADO.cs" />
