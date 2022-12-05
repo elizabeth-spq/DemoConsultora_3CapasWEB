@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ProyConsultora_ADO
 {
-    internal class AsignacionADO
+    public class AsignacionADO
     {
         // Instancias.....
         ConexionADO MiConexion = new ConexionADO();
@@ -16,7 +16,8 @@ namespace ProyConsultora_ADO
         SqlCommand cmd = new SqlCommand();
         SqlDataReader dtr;
 
-        public DataTable ListarGE()
+        public DataTable ListarAsignacionesProyectoFechas(String strCodProy,
+                                                        DateTime FecIni, DateTime FecFin)
         {
             try
             {
@@ -28,6 +29,10 @@ namespace ProyConsultora_ADO
                 cmd.CommandText = "usp_ListarAsignacionesProyectoFechas";
 
                 cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@codproy",strCodProy);
+                cmd.Parameters.AddWithValue("@fecini", FecIni);
+                cmd.Parameters.AddWithValue("@fecfin", FecFin);
+
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
                 ada.Fill(dts, "AsigProFec");
                 return dts.Tables["AsigProFec"];

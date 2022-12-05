@@ -33,49 +33,40 @@ namespace SitioWEB_ConsultoraGUI.Consultas
         protected global::System.Web.UI.WebControls.ImageButton btnBuscar;
 
         /// <summary>
-        /// Control txtRazSoc.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRazSoc;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
 
         /// <summary>
-        /// Control txtRUC.
+        /// Control cboArea.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtRUC;
+        protected global::System.Web.UI.WebControls.DropDownList cboArea;
 
         /// <summary>
-        /// Control txtDir.
+        /// Control txtArea.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDir;
+        protected global::System.Web.UI.WebControls.TextBox txtArea;
 
         /// <summary>
-        /// Control txtUbicacion.
+        /// Control txtTip.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtUbicacion;
-
-        /// <summary>
-        /// Control txtTel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtTel;
+        protected global::System.Web.UI.WebControls.TextBox txtTip;
 
         /// <summary>
         /// Control txtEstado.
@@ -87,13 +78,13 @@ namespace SitioWEB_ConsultoraGUI.Consultas
         protected global::System.Web.UI.WebControls.TextBox txtEstado;
 
         /// <summary>
-        /// Control txtDeuda.
+        /// Control txtPresu.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDeuda;
+        protected global::System.Web.UI.WebControls.TextBox txtPresu;
 
         /// <summary>
         /// Control txtFecIni.
@@ -177,13 +168,13 @@ namespace SitioWEB_ConsultoraGUI.Consultas
         protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
 
         /// <summary>
-        /// Control grvFacturas.
+        /// Control grvAsignaciones.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView grvFacturas;
+        protected global::System.Web.UI.WebControls.GridView grvAsignaciones;
 
         /// <summary>
         /// Control lnkMensaje.

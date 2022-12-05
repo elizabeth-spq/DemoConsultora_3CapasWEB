@@ -36,5 +36,9 @@ namespace ProyConsultora_BL
         {
             return objProyectoADO.EliminarProyecto(strCodigo);
         }
+        public DataTable ListarProyectoAnual()
+        {
+            return objProyectoADO.ListarProyectoAnual();
+        }
     }
 }

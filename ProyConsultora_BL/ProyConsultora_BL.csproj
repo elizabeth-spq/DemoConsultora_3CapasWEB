@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AreaBL.cs" />
+    <Compile Include="AsignacionBL.cs" />
     <Compile Include="CategoriaBL.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="ClienteBL.cs" />

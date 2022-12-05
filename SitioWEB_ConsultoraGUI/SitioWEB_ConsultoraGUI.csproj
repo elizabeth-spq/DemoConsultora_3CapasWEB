@@ -47,6 +47,7 @@
       <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -73,6 +74,7 @@
     <Content Include="Consultas\Consultas.aspx" />
     <Content Include="Consultas\WebColaboradoresPaginada.aspx" />
     <Content Include="Consultas\WebAsignacionProyecto.aspx" />
+    <Content Include="Consultas\WebGraficosProyectos.aspx" />
     <Content Include="CSS\DemoCSS.css" />
     <Content Include="Images\1.jpg" />
     <Content Include="Images\2.jpg" />
@@ -160,6 +162,13 @@
     </Compile>
     <Compile Include="Consultas\WebAsignacionProyecto.aspx.designer.cs">
       <DependentUpon>WebAsignacionProyecto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Consultas\WebGraficosProyectos.aspx.cs">
+      <DependentUpon>WebGraficosProyectos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Consultas\WebGraficosProyectos.aspx.designer.cs">
+      <DependentUpon>WebGraficosProyectos.aspx</DependentUpon>
     </Compile>
     <Compile Include="DemoMaster.Master.cs">
       <DependentUpon>DemoMaster.Master</DependentUpon>
