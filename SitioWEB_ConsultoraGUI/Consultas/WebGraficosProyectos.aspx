@@ -47,7 +47,7 @@
         </tr>
         <tr>
             <td class="auto-style2">
-                <asp:Chart ID="grafTotales" runat="server" aling="center" CssClass="GriedView" Palette="EarthTones">
+                <asp:Chart ID="grafTotales" runat="server" aling="center" CssClass="GriedView" Palette="EarthTones" Width="600px">
                     <Series>
                         <asp:Series Name="Series1" ChartType="StackedColumn">
                         </asp:Series>
