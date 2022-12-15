@@ -34,7 +34,7 @@
                     <asp:Image ID="Image1" runat="server" Height="235px" Width="231px" ImageUrl="~/Images/InicioSesion.jpg" />
                 </td>
                 <td class="auto-style7" colspan="2">
-    <span style="text-align: left; background-color: #FFFFCC;" class="tituloForm">BIENVENIDO AL MODULO DE VENTAS</span></td>
+    <span style="text-align: left; background-color: #FFFFCC;" class="tituloForm">BIENVENIDO AL MODULO CONSULTORA</span></td>
             </tr>
             <tr>
                 <td class="auto-style4" colspan="2">&nbsp;</td>
