@@ -22,6 +22,8 @@
         <%--Para facilitar el empleo de AJAX dentro de los formularios hijos del Masterpage--%>
     <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True"></asp:ScriptManager>
     <div>
+        <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+        <asp:Menu ID="Menu1" runat="server" CssClass="labelTitulo" DataSourceID="SiteMapDataSource1" Orientation="Horizontal"></asp:Menu>
         <%--Contenedor principal para la personalizacion de los formularios hijos del MasterPage--%>
         <asp:ContentPlaceHolder id="Principal" runat="server">
          

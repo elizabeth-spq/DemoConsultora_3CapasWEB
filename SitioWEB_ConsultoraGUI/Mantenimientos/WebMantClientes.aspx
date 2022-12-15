@@ -26,31 +26,9 @@
             height: 24px;
         }
 
-        .auto-style7 {
-            height: 32px;
-        }
-
-        .auto-style8 {
-            font-family: Verdana;
-            font-size: 10pt;
-            color: #993366;
-            height: 25px;
-        }
-
-        .auto-style9 {
-            height: 25px;
-        }
-
-        .auto-style10 {
-            font-family: Verdana;
-            font-size: 10pt;
-            color: #993366;
-            height: 26px;
-        }
-
-        .auto-style11 {
-            height: 26px;
-        }
+        .auto-style12 {
+        height: 36px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Principal" runat="Server">
@@ -71,14 +49,24 @@
             <br />
             <table class="auto-style3">
                 <tr>
-                    <td class="labelContenido">Ingrese nombre del cliente:</td>
-                    <td>
+                    <td class="auto-style1">Ingrese nombre del cliente:</td>
+                    <td class="auto-style12">
                         <asp:TextBox ID="txtFiltro" runat="server" CssClass="TextBox" Width="255px"></asp:TextBox>
                         &nbsp;
                         <asp:ImageButton ID="btnFiltrar" runat="server" ImageUrl="~/Images/Buscar.png" OnClick="btnFiltrar_Click" Style="width: 16px" />
                     </td>
-                    <td>
+                    <td class="auto-style12">
                         <asp:Button ID="btnNuevo" runat="server" CssClass="boton3" OnClick="btnNuevo_Click" Text="Nuevo cliente" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="labelContenido">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="labelContenido" colspan="3">
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="labelContenido" NavigateUrl="~/Mantenimientos/Mantenimientos.aspx">Retornar</asp:HyperLink>
                     </td>
                 </tr>
             </table>

@@ -5,18 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace SitioVentasWEB_GUI.Mantenimientos
+namespace SitioWEB_ConsultoraGUI
 {
-    public partial class MantPlantilla : System.Web.UI.Page
+    public partial class MenuPrincipal : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-
-        protected void btnNuevo_Click(object sender, EventArgs e)
-        {
-            PopMan01.Show();
         }
     }
 }

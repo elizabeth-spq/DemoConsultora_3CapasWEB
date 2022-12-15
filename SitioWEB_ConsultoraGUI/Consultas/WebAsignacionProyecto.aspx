@@ -110,7 +110,7 @@
         </tr>
         <tr>
             <td colspan="3">
-                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Consultas/Consultas.aspx">Retornar</asp:HyperLink>
+                <asp:HyperLink ID="HyperLinkCon1" runat="server" NavigateUrl="~/Consultas/Consultas.aspx">Retornar</asp:HyperLink>
             </td>
             <td>&nbsp;</td>
         </tr>

@@ -1,6 +1,11 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/DemoMaster.Master" AutoEventWireup="true" CodeBehind="WebColaboradoresPaginada.aspx.cs" Inherits="SitioWEB_ConsultoraGUI.Consultas.WebColaboradoresPaginada" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="Cabecera" runat="server">
+    <style type="text/css">
+    .auto-style1 {
+        height: 29px;
+    }
+</style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Principal" runat="server">
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
@@ -44,6 +49,17 @@
                     <td class="auto-style6" colspan="3">
                         <asp:Label ID="lblMensaje" runat="server" CssClass="labelErrores"></asp:Label>
                     </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" colspan="3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style1" colspan="3">
+                        <asp:HyperLink ID="HyperLinkCon2" runat="server" NavigateUrl="~/Consultas/Consultas.aspx">Retornar</asp:HyperLink>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6" colspan="3">&nbsp;</td>
                 </tr>
             </table>
 

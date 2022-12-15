@@ -106,6 +106,16 @@
                         <asp:Button ID="btnNuevo" runat="server" CssClass="boton3" OnClick="btnNuevo_Click" Text="Nuevo proyecto" />
                     </td>
                 </tr>
+                <tr>
+                    <td class="labelContenido">&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="labelContenido" colspan="3">
+                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="labelContenido" NavigateUrl="~/Mantenimientos/Mantenimientos.aspx">Retornar</asp:HyperLink>
+                    </td>
+                </tr>
             </table>
             <br />
             <asp:GridView ID="grvProyectos" runat="server" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" GridLines="Horizontal" Width="1031px" AutoGenerateColumns="False" CssClass="GriedView" AllowPaging="True" OnPageIndexChanging="grvProyectos_PageIndexChanging" OnRowCommand="grvProyectos_RowCommand" OnRowDataBound="grvProyectos_RowDataBound" ShowHeaderWhenEmpty="True">

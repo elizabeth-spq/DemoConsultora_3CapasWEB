@@ -77,7 +77,7 @@
                         </tr>
                         <tr>
                             <td class="auto-style20">
-                                <asp:HyperLink ID="HyperLink1" runat="server" ForeColor="Red" NavigateUrl="~/Transacciones/Transacciones.aspx">Retornar Menu </asp:HyperLink>
+                                <asp:HyperLink ID="HyperLinkTran1" runat="server" NavigateUrl="~/Transacciones/Transacciones.aspx">Retornar</asp:HyperLink>
                             </td>
                             <td class="auto-style21">&nbsp;</td>
                             <td class="auto-style21">&nbsp;</td>

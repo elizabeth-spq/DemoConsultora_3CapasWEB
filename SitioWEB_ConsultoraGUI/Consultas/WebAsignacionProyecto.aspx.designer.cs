@@ -159,13 +159,13 @@ namespace SitioWEB_ConsultoraGUI.Consultas
         protected global::System.Web.UI.WebControls.Label lblRegistros;
 
         /// <summary>
-        /// Control HyperLink1.
+        /// Control HyperLinkCon1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink1;
+        protected global::System.Web.UI.WebControls.HyperLink HyperLinkCon1;
 
         /// <summary>
         /// Control grvAsignaciones.

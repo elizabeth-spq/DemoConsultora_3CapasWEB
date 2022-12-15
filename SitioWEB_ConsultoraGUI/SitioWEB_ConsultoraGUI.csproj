@@ -150,12 +150,15 @@
     <Content Include="Images\Transacciones.jpg" />
     <Content Include="Images\Ventas.jpg" />
     <Content Include="Mantenimientos\Mantenimientos.aspx" />
-    <Content Include="Mantenimientos\MantPlantilla.aspx" />
     <Content Include="Mantenimientos\WebMantClientes.aspx" />
     <Content Include="Mantenimientos\WebMantProyectos.aspx" />
+    <Content Include="MenuPrincipal.aspx" />
     <Content Include="Transacciones\RegistrarAsignacion.aspx" />
     <Content Include="Transacciones\Transacciones.aspx" />
+    <Content Include="Transacciones\WebListarAsignaciones.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebLogin.aspx" />
+    <Content Include="WebLogout.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Consultas\Consultas.aspx.cs">
@@ -200,13 +203,6 @@
     <Compile Include="Mantenimientos\Mantenimientos.aspx.designer.cs">
       <DependentUpon>Mantenimientos.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Mantenimientos\MantPlantilla.aspx.cs">
-      <DependentUpon>MantPlantilla.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Mantenimientos\MantPlantilla.aspx.designer.cs">
-      <DependentUpon>MantPlantilla.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Mantenimientos\WebMantClientes.aspx.cs">
       <DependentUpon>WebMantClientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -220,6 +216,13 @@
     </Compile>
     <Compile Include="Mantenimientos\WebMantProyectos.aspx.designer.cs">
       <DependentUpon>WebMantProyectos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.aspx.designer.cs">
+      <DependentUpon>MenuPrincipal.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transacciones\RegistrarAsignacion.aspx.cs">
@@ -236,6 +239,27 @@
     <Compile Include="Transacciones\Transacciones.aspx.designer.cs">
       <DependentUpon>Transacciones.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Transacciones\WebListarAsignaciones.aspx.cs">
+      <DependentUpon>WebListarAsignaciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\WebListarAsignaciones.aspx.designer.cs">
+      <DependentUpon>WebListarAsignaciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLogin.aspx.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogin.aspx.designer.cs">
+      <DependentUpon>WebLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebLogout.aspx.cs">
+      <DependentUpon>WebLogout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebLogout.aspx.designer.cs">
+      <DependentUpon>WebLogout.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="DemoMaster.Master" />
@@ -246,6 +270,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ProyConsultora_BE\ProyConsultora_BE.csproj">

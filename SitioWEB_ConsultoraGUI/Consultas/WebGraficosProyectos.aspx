@@ -9,12 +9,28 @@
         .auto-style2 {
             height: 404px;
         }
+        .auto-style3 {
+            width: 100%;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="Principal" runat="server">
     <p class="tituloForm">Grafico de Proyectos por Año</p>
     <p class="tituloForm">
         <asp:Label ID="lblMensaje" runat="server" CssClass="labelErrores"></asp:Label>
+        <table class="auto-style3">
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                <asp:HyperLink ID="HyperLinkCon3" runat="server" NavigateUrl="~/Consultas/Consultas.aspx">Retornar</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
     </p>
     <table class="auto-style1">
         <tr>

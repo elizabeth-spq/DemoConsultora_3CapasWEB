@@ -51,6 +51,15 @@ namespace SitioWEB_ConsultoraGUI.Mantenimientos
         protected global::System.Web.UI.WebControls.Button btnNuevo;
 
         /// <summary>
+        /// Control HyperLink2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+
+        /// <summary>
         /// Control grvClientes.
         /// </summary>
         /// <remarks>
