@@ -5,6 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ProyConsultora_BE;
 
 namespace ProyConsultora_ADO
 {
@@ -43,5 +44,70 @@ namespace ProyConsultora_ADO
             }
 
         }
+
+        public String RegistrarAsignacion(AsignacionBE objAsignacionBE)
+        {
+            try
+            {
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.CommandText = "usp_RegistrarAsignacion";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@vcodproy", objAsignacionBE.Cod_Proy);
+                cmd.Parameters.AddWithValue("@vfecasig", objAsignacionBE.Fec_Asig);
+                cmd.Parameters.AddWithValue("@vUsuRegistro", objAsignacionBE.Usu_Registro);
+                cmd.Parameters.AddWithValue("@vestasg", objAsignacionBE.Est_Asig);
+                cmd.Parameters.AddWithValue("@vtarf", objAsignacionBE.Tar_Asig);
+
+                //Parametro de salida...
+                cmd.Parameters.Add(new SqlParameter("@vcodasig", SqlDbType.VarChar, 4));
+                cmd.Parameters["@vcodasig"].Direction=ParameterDirection.Output;
+
+                //Parametro tipo tabla con los detalles de la orden de compra...
+                cmd.Parameters.Add(new SqlParameter("@detalles", SqlDbType.Structured));
+                cmd.Parameters["@detalles"].Value = objAsignacionBE.DetallesASIG;
+
+                //ejecutamos...
+                cnx.Open();
+                cmd.ExecuteNonQuery();
+
+                //Retornamos el numero de Asignacion generado
+                return cmd.Parameters["@vcodasig"].Value.ToString();
+            }
+            catch (Exception ex)
+            {
+                return String.Empty;
+            }
+            finally
+            {
+                if (cnx.State == ConnectionState.Open)
+                {
+                    cnx.Close();
+                }
+            }
+
+        }
+
+        public DataTable ListarAsignacion()
+        {
+            try
+            {
+                DataSet dts = new DataSet();
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection= cnx;
+                cmd.CommandType= CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarAsignacion";
+                cmd.Parameters.Clear();
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(dts,"Asignaciones");
+                return dts.Tables["Asignaciones"];
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+        
     }
 }

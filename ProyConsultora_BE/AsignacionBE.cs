@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,5 +19,14 @@ namespace ProyConsultora_BE
         public DateTime Fec_Ult_Mod { get; set; }
         public String Usu_Ult_Mod { get; set; }
         public Int16 Est_Asig { get; set; }
+        public Double Tar_Asig { get; set; }
+
+        //Para el detalle
+        private DataTable Detalles;
+        public DataTable DetallesASIG
+        {
+            get { return Detalles; }
+            set { Detalles = value; }
+        }
     }
 }

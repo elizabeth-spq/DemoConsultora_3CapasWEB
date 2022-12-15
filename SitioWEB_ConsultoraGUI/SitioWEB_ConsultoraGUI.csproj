@@ -46,7 +46,22 @@
     <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
       <HintPath>..\packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
     </Reference>
+    <Reference Include="EPPlus, Version=6.1.1.0, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.6.1.1\lib\net462\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.Interfaces, Version=6.1.1.0, Culture=neutral, PublicKeyToken=a694d7f3b0907a61, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.Interfaces.6.1.1\lib\net462\EPPlus.Interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus.System.Drawing, Version=6.1.1.0, Culture=neutral, PublicKeyToken=2308d35469c9bac0, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.System.Drawing.6.1.1\lib\net462\EPPlus.System.Drawing.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=1.4.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.1.4.1\lib\net46\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks" />
     <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -138,6 +153,7 @@
     <Content Include="Mantenimientos\MantPlantilla.aspx" />
     <Content Include="Mantenimientos\WebMantClientes.aspx" />
     <Content Include="Mantenimientos\WebMantProyectos.aspx" />
+    <Content Include="Transacciones\RegistrarAsignacion.aspx" />
     <Content Include="Transacciones\Transacciones.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -206,6 +222,13 @@
       <DependentUpon>WebMantProyectos.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transacciones\RegistrarAsignacion.aspx.cs">
+      <DependentUpon>RegistrarAsignacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Transacciones\RegistrarAsignacion.aspx.designer.cs">
+      <DependentUpon>RegistrarAsignacion.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Transacciones\Transacciones.aspx.cs">
       <DependentUpon>Transacciones.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -233,6 +256,10 @@
       <Project>{6d84a1ec-6ab9-423f-827e-6fdd1c9c08f2}</Project>
       <Name>ProyConsultora_BL</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Documentos\" />
+    <Folder Include="Proformas\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

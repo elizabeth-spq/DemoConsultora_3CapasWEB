@@ -46,5 +46,9 @@ namespace ProyConsultora_BL
         {
             return objColaboradorADO.NumPag_ListarColaborador_Paginacion(strCod_Area, strCod_Cat, strEstado);
         }
+        public DataTable ListarColaboradoresActivos()
+        {
+            return objColaboradorADO.ListarColaboradoresActivos();
+        }
     }
 }

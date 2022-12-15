@@ -83,6 +83,7 @@
         </ContentTemplate>
     </asp:UpdatePanel>
     <asp:UpdateProgress ID="UpdateProgress1" runat="server" DisplayAfter="0" AssociatedUpdatePanelID="UpdatePanel1">
+       <%-- 
         <ProgressTemplate>
             <div class="overlay">
                 <div class="overlayContent ">
@@ -91,5 +92,6 @@
                 </div>
             </div>
         </ProgressTemplate>
+           --%>
     </asp:UpdateProgress>
 </asp:Content>

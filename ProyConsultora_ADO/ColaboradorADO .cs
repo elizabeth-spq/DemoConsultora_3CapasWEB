@@ -306,6 +306,30 @@ namespace ProyConsultora_ADO
             }
 
         }
+        public DataTable ListarColaboradoresActivos()
+        {
+
+            try
+            {
+                DataSet dts = new DataSet();
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarColaboradoresActivos";
+                cmd.Parameters.Clear();
+                                
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(dts, "ColaboradoresActivos");
+
+                return dts.Tables["ColaboradoresActivos"];
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
 
 
     }

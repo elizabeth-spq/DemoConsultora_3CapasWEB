@@ -40,5 +40,10 @@ namespace ProyConsultora_BL
         {
             return objProyectoADO.ListarProyectoAnual();
         }
+        public DataTable ListarProyectosActivos()
+        {
+            return objProyectoADO.ListarProyectosActivos();
+        }
+        
     }
 }

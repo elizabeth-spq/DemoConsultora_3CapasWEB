@@ -229,5 +229,29 @@ namespace ProyConsultora_ADO
             }
 
         }
+        public DataTable ListarProyectosActivos()
+        {
+
+            try
+            {
+                DataSet dts = new DataSet();
+                cnx.ConnectionString = MiConexion.GetCnx();
+                cmd.Connection = cnx;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "usp_ListarProyectosActivos";
+                cmd.Parameters.Clear();
+                                
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(dts, "ProyectosActivos");
+
+                return dts.Tables["ProyectosActivos"];
+
+            }
+            catch (SqlException ex)
+            {
+                throw new Exception(ex.Message);
+            }
+
+        }
     }
 }
